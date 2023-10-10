@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="65.878754">
+<testcase classname="To Checking Login Functionality of Facebook" name="To Check in UserName and Invalid Password to Login" time="49.306643">
+<system-out><![CDATA[When User have enter the Valid Email and Invalid Password...................passed
+And User Have Click the Login button........................................passed
+Then User Have Enter Invalid Credential Page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Checking Login Functionality of Facebook" name="To Check login function UserName and Password" time="16.572111">
+<failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)&#13;&#10;&#9;at org.base.BaseClass.fillText(BaseClass.java:88)&#13;&#10;&#9;at org.step.StepDefinitionFile.user_have_Enter_the_Valid_Email_and_Valid_Password(StepDefinitionFile.java:51)&#13;&#10;&#9;at ✽.User have Enter the Valid Email and Valid Password(file:src/test/resources/Features/Login.feature:15)&#13;&#10;"><![CDATA[When User have Enter the Valid Email and Valid Password.....................failed
+And User Have Click the Login button........................................skipped
+Then User Have Enter Invalid Credential Page................................skipped
+
+StackTrace:
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at org.base.BaseClass.fillText(BaseClass.java:88)
+	at org.step.StepDefinitionFile.user_have_Enter_the_Valid_Email_and_Valid_Password(StepDefinitionFile.java:51)
+	at ✽.User have Enter the Valid Email and Valid Password(file:src/test/resources/Features/Login.feature:15)
+]]></failure>
+</testcase>
+</testsuite>
